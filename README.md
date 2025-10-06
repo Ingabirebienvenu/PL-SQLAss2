@@ -77,6 +77,11 @@ The **Oracle Listener service** wasn’t started during installation or was misc
    ```bash
    lsnrctl start
 ORA-12514: TNS: listener does not currently know of service requested
+The Oracle service (OracleServiceXE) didn’t start after system reboot.
+I started the service manually to Verified it via Windows Services → OracleServiceXE → Status: Running = net start OracleServiceXE
+Result: Database service started successfully, and connection via SQL*Plus worked again.
+
+
 
 
 
